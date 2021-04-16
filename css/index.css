@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+              /*BACKGROUND*/
+
+.container{
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(45deg, #18A4D7, #1f441e);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 600% 600%;
+  animation: colors 15s ease-in-out infinite;
+}
+            /*ANIMAÇÃO DO BACKGROUND*/
+@keyframes colors{
+  0%{
+  background-position: 0% 50%;
+}
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+            /*ANIMAÇÃO DOS ATOMOS*/
+@keyframes objetos{
+  0%{
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.7) translateY(-90px) rotate(-440deg);
+    opacity: 0;
+  }
+}
+            /*MENU DA PAGINA*/
+.menu{
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  margin-top: 0;
+  margin-left: 0;
+  width: 40px;
+  transition: transform .7s ;
+}
+.logo:hover{
+  transform: translateX(-3px);
+}
+nav{
+  flex: 1;
+  text-align: right;
+  transition: transform 0.5s;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  padding: 3px;
+  border-radius: 2px;
+}
+nav ul li a:hover{
+  background-color: white;
+  border-radius: 2px;
+  color: black;
+  transition: .5s;
+}
+            /*TEXTO PRINCIPAL*/
+.bloco{
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.col{
+  flex-basis: 50%;
+  padding-right: 5%;
+  margin-top: 3%;
+}
+h1{
+  color: white;
+  font-size: 100px;
+}
+p{
+  color: white;
+  font-size: 12px;
+  line-height:
+}
+              /*BOTÃO*/
+button{
+  color: black;
+  background: white;
+  width: 180px;
+  font-size: 12px;
+  padding: 12px 0;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+            /*CARDS 1, 2, 3 e 4*/
+.card{
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+.card1{
+  background-image: url('../imagens/card1.jpg');
+}
+.card2{
+  background-image: url('../imagens/card2.jpg');
+  background-size: 250px 250px;
+}
+.card3{
+  background-image: url('../imagens/card3.jpg');
+}
+.card4{
+  background-image: url('../imagens/card4.jpg');
+}
+            /*TRANSIÇÃO DOS CARDS*/
+.card:hover{
+  transform: translateY(-10px);
+}
+            /*TEXTO DENTRO DOS CARDS*/
+h5{
+  color: white;
+}
+.card p{
+  font-size: 12px;
+}
+hr{
+  height: 50%;
+  margin-right:3%;
+}
+            /*QUADRADOS*/
+.obj{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+
+}
+.obj1{
+  top: 22%;
+  left: 36%;
+  animation: objetos 16s linear infinite;
+}
+.obj2{
+  top: 88%;
+  left: 40%;
+  animation: objetos 9s linear infinite;
+}
+.obj3{
+  top: 37%;
+  left: 6%;
+  animation: objetos 10s linear infinite;
+}
+.obj4{
+  top: 93%;
+  left: 17%;
+  animation: objetos 15s linear infinite;
+}
+.objs{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+            /*FOOTER*/
+footer{
+  background-color: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: white;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.pfooter{
+  max-width: 500px;
+  padding: 15px;
+}
+.footer-baixo{
+  background-color: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-baixo p{
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-baixo span{
+  text-transform: uppercase;
+  opacity: .4;
+}
